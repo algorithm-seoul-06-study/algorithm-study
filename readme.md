@@ -18,7 +18,7 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 
 2. 문제 풀 때(pr 생성할 때)마다 본인 branch 생성 후, 생성한 branch로 전환
 <br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 본인 branch를 생성해야 함!!!</strong></span>
-<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 [PR 규칙](#pullRequest) 지켜야 함!!!</strong></span>
+<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 [PR 규칙](#pullrequest) 지켜야 함!!!</strong></span>
 `git branch 브랜치명(본인 아이디로)`
 `git switch 브랜치명`
 
@@ -92,7 +92,7 @@ ex)
 
 <br><br>
 
-### PR 규칙 <a id="pullRequest"></a>
+### PR 규칙 <a id="pullrequest"></a>
 
 PR Title : 이름 / 주차 / 요일
 
