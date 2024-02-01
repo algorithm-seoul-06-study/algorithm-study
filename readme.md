@@ -94,8 +94,8 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 <br>
 
 ex) <br>
-`kocoveen/week1/boj1004.java` <br>
-`kocoveen/week10/boj9876543210.java` <br>
+`kocoveen/week1/BOJ1004.java` <br>
+`kocoveen/week10/BOJ9876543210.java` <br>
 <br>
 
 ### 커밋 규칙 <a id="commit"></a>
@@ -111,8 +111,8 @@ ex) <br>
 
 ex)
 
-1. Commit subject : `[solved] boj28354`
-2. Commit subject : `[fix] boj28354` 
+1. Commit subject : `[solved] BOJ28354`
+2. Commit subject : `[fix] BOJ28354` 
 
 <br><br>
 
