@@ -111,8 +111,8 @@ ex) <br>
 
 ex)
 
-1. Commit subject : `[solved] boj28354`
-2. Commit subject : `[fix] boj28354` 
+1. Commit subject : `[solved] BOJ28354`
+2. Commit subject : `[fix] BOJ28354` 
 
 <br><br>
 
