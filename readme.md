@@ -37,6 +37,7 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
    ```
    또는<br>
    ```
+   git fetch --prune origin 
    git reset --hard origin/main
    ```
   
