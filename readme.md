@@ -1,4 +1,4 @@
-## 📜규칙
+# 📜규칙
 
 |  | 설명 |
 | --- | --- |
@@ -8,7 +8,7 @@
 * 시간이나 플랫폼의 수정 및 건의 사항이 있으면, 협의 후 결정
 
 
-### 참여방법
+## 참여방법
 
 BOJ 그룹 (https://www.acmicpc.net/group/19832)
 
@@ -66,27 +66,27 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 
 <br>
 
-### 진행방식
+## 진행방식
 
 1. 매 주 월마다 문제가 출시되면, 다음 모임까지 풀어서 PR을 날림.
 
-    -   <sub style="color: rgba(0, 0, 0, 0.8); margin-left: 20px;"> 풀지 못한 문제의 경우에도 시도한 코드를 PR 날림.</sub>
+    - 풀지 못한 문제의 경우에도 시도한 코드를 PR 날림.
 
 
 2. 모임 시간에 맞춰 함께 PR을 보며, 코드 리뷰 진행.
-    -   <sub style="color: #808080; margin-left: 20px;"> 코드 리뷰의 원활한 진행을 위해 언어는 `JAVA`를 사용.</sub>
+    - 코드 리뷰의 원활한 진행을 위해 언어는 `JAVA`를 사용.
 
 3. 코드 리뷰가 끝나면 코드를 수정하고, PR을 수정.
 4. PR 수정이 끝나면, merge
-    -   <sub style="color: #808080; margin-left: 20px;"> 동기화를 위해 git pull을 진행할 수 있음.</sub>
+    - 동기화를 위해 git pull을 진행할 수 있음.
 
 5. 남는 시간에는 질문 및 각자 본인 시간 활용
 
 <br><br>
 
-### 파일 생성 규칙
+## 파일 생성 규칙
 
-#### 📁 Repository 폴더 구조
+### 📁 Repository 폴더 구조
 ```
 {Github ID}/{주차}/{"Site약자 + 문제번호".java}
 ```
@@ -94,8 +94,8 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 <br>
 
 ex) <br>
-`kocoveen/week1/boj1004.java` <br>
-`kocoveen/week10/boj9876543210.java` <br>
+`kocoveen/week1/BOJ1004.java` <br>
+`kocoveen/week10/BOJ9876543210.java` <br>
 <br>
 
 ### 커밋 규칙 <a id="commit"></a>
