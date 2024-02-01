@@ -12,22 +12,47 @@
 
 BOJ 그룹 (https://www.acmicpc.net/group/19832)
 
-### 상세 설명 *(매우 중요)*
-
+## 상세 설명 *(매우 중요)*
+### 최초 설정
 1. clone [본인이 풀 각 pc(SSAFY컴, 랩탑, 데스크탑 등)에서 각 처음 한번만]
+   ```
+   git clone [url]
+   ```
+2. 로컬 개인 branch 생성 후 전환
+<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 본인 branch를 사용해야 함!!!</strong></span>
+<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 [PR 규칙](#pullrequest) 지켜야 함!!!</strong></span><br>
+    ```
+    git branch [브랜치명(본인 아이디로)]
+    git switch [브랜치명]
+    ```
 
-2. 문제 풀 때(pr 생성할 때)마다 본인 branch 생성 후, 생성한 branch로 전환
-<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 본인 branch를 생성해야 함!!!</strong></span>
-<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 [PR 규칙](#pullrequest) 지켜야 함!!!</strong></span>
-`git branch 브랜치명(본인 아이디로)`
-`git switch 브랜치명`
-
-3. 문제 푸셈
-
-4. add, commit, push origin {본인이생성한브랜치명}
-<br><span style="color:red"><strong> ※ 주의 : [commit 메시지 컨벤션](#commit) 지켜서 올리자!!!!</strong></span>
+### 최초 설정 이후
+1. 메인 브랜치에 변경사항이 있을 수 있으므로 작업 전에 pull 하기
+   ```
+   git pull origin main
+   ```
+   또는<br>
+   
+   ```
+   git reset --hard origin/main
+   ```
+  
+2. 문제 풀기
+3. 로컬 개인 브랜치에서 작업 후, add & commit
+   ```
+   git add .
+   ```
+   또는<br/>
+   ```
+   git add [파일명]
+   ```
+   <span style="color:red"><strong> ※ 주의 : [commit 메시지 컨벤션](#commit) 지켜서 올리자!!!!</strong></span><br>
+4. 원격 저장소의 개인 branch로 push  
+    ```
+    git push origin {본인이생성한브랜치명}
+    ```
     1. 본인이 풀었다면,  github에 pull request 페이지에 들어가서 create new P.R.
-    <br><span style="color:red"><strong> ※ 주의 : 스터디 전까지 절대 merge 하지말기!!!!</strong></span>
+    <br><span style="color:red"><strong> ※ 주의 : 스터디 전까지 절대 merge 하지말기!!!!</strong></span><br>
     2. 못 풀었다면 (merge 전이라면),
         1. 현재 pc(이하 A)인 경우, 4로 돌아감
         2. 다른 pc(이하 B)에서 하는 경우,
@@ -38,7 +63,6 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
         3. 4.1로 진행
 
 5. 스터디 할 때 모여서, 모든 멤버 확인 후, merge
-
 
 <br>
 
