@@ -31,8 +31,11 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
    ```
    git pull origin main
    ```
+   만약 abort 된다면 아래를 시도<br>
+   ```
+   git pull --rebase origin main
+   ```
    또는<br>
-   
    ```
    git reset --hard origin/main
    ```
