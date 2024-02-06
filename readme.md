@@ -21,8 +21,8 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
    git clone {url}
    ```
 2. 로컬 개인 branch 생성 후 전환
-<br><span style="color:red"><strong> ※ 주의 : 꼭 반드시 본인 branch를 사용해야 함!!!</strong></span>
-
+   
+   :exclamation:  **반드시 본인 branch를 사용해야 함**  :exclamation:
     ```
     git branch {브랜치명(본인 아이디로)}
     git switch {브랜치명}
@@ -45,21 +45,26 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
   
 2. 문제 풀기
 3. 로컬 개인 브랜치에서 작업 후, add & commit
+
+   :exclamation:  **[commit 메시지 컨벤션](#commit) 지켜서 올리자**  :exclamation:
    ```
    git add .
+   git commit -m "{커밋 메세지}"
    ```
-   또는<br/>
+   또는<br>
    ```
    git add {파일명}
+   git commit -m "{커밋 메세지}"
    ```
-   <span style="color:red"><strong> ※ 주의 : [commit 메시지 컨벤션](#commit) 지켜서 올리자!!!!</strong></span><br>
-4. 원격 저장소의 개인 branch로 push  
+   
+   
+5. 원격 저장소의 개인 branch로 push  
     ```
     git push origin {생성한 브랜치명}
     ```
-5. 모든 문제에 대해 커밋을 완료했다면, github에 pull request 페이지에 들어가서 create new P.R.
+6. 모든 문제에 대해 커밋을 완료했다면, github에 pull request 페이지에 들어가서 create new P.R.
     
-    - <span style="color:red"><strong> :exclamation: 스터디 전까지 절대 merge 하지말기 :exclamation:</strong></span>
+    - :exclamation: **스터디 전까지 절대 merge 하지말기** :exclamation:
 
     - 남은 문제가 있다면,
         1. 계속해서 같은 PC에서 작업하는 경우 2번으로 돌아가 계속 진행 
