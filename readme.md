@@ -56,6 +56,9 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
    git add {파일명}
    git commit -m "{커밋 메세지}"
    ```
+4. 각 주차마다 푼 문제를 하나의 README.md로 만듦. 자세한 건 밑의 링크 참조
+   - **[문제 README.md 작성 규칙](#problemreadme)**
+   - **[문제 README.md 템플릿](docs/README_example.md)**
    
    
 5. 원격 저장소의 개인 branch로 push  
@@ -85,9 +88,11 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 ## 진행방식
 
 1. 매 주 월마다 문제가 출시되면, 다음 모임까지 풀어서 PR을 날림.
+    - 각 주차마다 하나의 README.md 파일에 문제별 해결방법 및 코멘트, 코드 작성 
+    - [README.md 템플릿 링크](https://github.com/algorithm-seoul-06-study/algorithm-study/blob/main/docs/pull_request_template.md)
     - 풀지 못한 문제의 경우에도 시도한 코드를 PR 날림.
 
-2. 모임 시간에 맞춰 함께 PR을 보며, 코드 리뷰 진행.
+2. 모임 시간에 맞춰 각자 작성한 README.md을 보며, 코드 리뷰 진행.
     - 코드 리뷰의 원활한 진행을 위해 언어는 `JAVA`를 사용.
 
 3. 코드 리뷰가 끝나면 코드를 수정.
@@ -132,13 +137,26 @@ ex)<br>
 
 <br>
 
+
+## 문제 README 작성 규칙 <a id="problemreadme"></a>
+
+파일명 : README.md
+
+대제목 : Week + 주차"
+
+중제목 : 사이트이름 + 문제 번호 + 문제명
+
+자세한 것은 **[문제 README.md 템플릿](docs/README_example.md)** 참조
+
+<br>
+
 ## PR 규칙 <a id="pullrequest"></a>
 
 PR Title : 이름 / 주차 / 요일
 
 ex)  `장웅기 / 1주차 / 목`
 
-PR 코멘트 : 템플릿에 맞게 작성
+PR 코멘트 : 자유 작성
 
 ---
 
