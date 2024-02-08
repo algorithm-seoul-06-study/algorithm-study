@@ -14,6 +14,26 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 
 <br>
 
+## 문제 README 링크
+
+| 날짜 | 박혜원 | 배수아 | 심재승 | 정민 | 장웅기 | 탁인혁 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 2주차 | [링크](hyewon-p\week2\README.md) | [링크](sooa971\week2\README.md) | [링크](jsshim2001\week2\README.md) | [링크](minizzung\week2\README.md) | [링크](kocoveen\week2\README.md) | [링크](dlsgur1343\week2\README.md) |
+| 3주차 | [링크](hyewon-p\week3\README.md) | [링크](sooa971\week3\README.md) | [링크](jsshim2001\week3\README.md) | [링크](minizzung\week3\README.md) | [링크](kocoveen\week3\README.md) | [링크](dlsgur1343\week3\README.md) |
+| 4주차 | [링크](hyewon-p\week4\README.md) | [링크](sooa971\week4\README.md) | [링크](jsshim2001\week4\README.md) | [링크](minizzung\week4\README.md) | [링크](kocoveen\week4\README.md) | [링크](dlsgur1343\week4\README.md) |
+| 5주차 | [링크](hyewon-p\week5\README.md) | [링크](sooa971\week5\README.md) | [링크](jsshim2001\week5\README.md) | [링크](minizzung\week5\README.md) | [링크](kocoveen\week5\README.md) | [링크](dlsgur1343\week5\README.md) |
+| 6주차 | [링크](hyewon-p\week6\README.md) | [링크](sooa971\week6\README.md) | [링크](jsshim2001\week6\README.md) | [링크](minizzung\week6\README.md) | [링크](kocoveen\week6\README.md) | [링크](dlsgur1343\week6\README.md) |
+| 7주차 | [링크](hyewon-p\week7\README.md) | [링크](sooa971\week7\README.md) | [링크](jsshim2001\week7\README.md) | [링크](minizzung\week7\README.md) | [링크](kocoveen\week7\README.md) | [링크](dlsgur1343\week7\README.md) |
+| 8주차 | [링크](hyewon-p\week8\README.md) | [링크](sooa971\week8\README.md) | [링크](jsshim2001\week8\README.md) | [링크](minizzung\week8\README.md) | [링크](kocoveen\week8\README.md) | [링크](dlsgur1343\week8\README.md) |
+| 9주차 | [링크](hyewon-p\week9\README.md) | [링크](sooa971\week9\README.md) | [링크](jsshim2001\week9\README.md) | [링크](minizzung\week9\README.md) | [링크](kocoveen\week9\README.md) | [링크](dlsgur1343\week9\README.md) |
+| 10주차 | [링크](hyewon-p\week10\README.md) | [링크](sooa971\week10\README.md) | [링크](jsshim2001\week10\README.md) | [링크](minizzung\week10\README.md) | [링크](kocoveen\week10\README.md) | [링크](dlsgur1343\week10\README.md) |
+| 11주차 | [링크](hyewon-p\week11\README.md) | [링크](sooa971\week11\README.md) | [링크](jsshim2001\week11\README.md) | [링크](minizzung\week11\README.md) | [링크](kocoveen\week11\README.md) | [링크](dlsgur1343\week11\README.md) |
+| 12주차 | [링크](hyewon-p\week12\README.md) | [링크](sooa971\week12\README.md) | [링크](jsshim2001\week12\README.md) | [링크](minizzung\week12\README.md) | [링크](kocoveen\week12\README.md) | [링크](dlsgur1343\week12\README.md) |
+| 13주차 | [링크](hyewon-p\week13\README.md) | [링크](sooa971\week13\README.md) | [링크](jsshim2001\week13\README.md) | [링크](minizzung\week13\README.md) | [링크](kocoveen\week13\README.md) | [링크](dlsgur1343\week13\README.md) |
+
+<br>
+
+
 ## 상세 설명
 ### 최초 설정
 1. 원격 레포지토리 클론
