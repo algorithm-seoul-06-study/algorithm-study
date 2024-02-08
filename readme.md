@@ -3,6 +3,7 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |[@hyewon-p](https://github.com/hyewon-p)|[@InhyukTak](https://github.com/InhyukTak)|[@JaeSeung-Shim](https://github.com/JaeSeung-Shim)|[@kocoveen](https://github.com/kocoveen)|[@minizzung](https://github.com/minizzung)|[@SACANDO](https://github.com/SACANDO)|
 
+<br>
 
 # 📜규칙
 
