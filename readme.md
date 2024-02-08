@@ -1,3 +1,9 @@
+# 👨‍👦‍👦Team
+|![](https://avatars.githubusercontent.com/u/90131657?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163400?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163428?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/79296295?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/152831880?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/119462333?v=4?width=150px)|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|[@hyewon-p](https://github.com/hyewon-p)|[@InhyukTak](https://github.com/InhyukTak)|[@JaeSeung-Shim](https://github.com/JaeSeung-Shim)|[@kocoveen](https://github.com/kocoveen)|[@minizzung](https://github.com/minizzung)|[@SACANDO](https://github.com/SACANDO)|
+
+
 # 📜규칙
 
 |  | 설명 |
@@ -183,8 +189,3 @@ PR 코멘트 : 자유 작성
 ## 건의사항
 
 MM채널, 개인 MM을 이용한다.
-
-## Team
-|![](https://avatars.githubusercontent.com/u/90131657?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163400?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163428?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/79296295?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/152831880?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/119462333?v=4?width=150px)|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|[@hyewon-p](https://github.com/hyewon-p)|[@InhyukTak](https://github.com/InhyukTak)|[@JaeSeung-Shim](https://github.com/JaeSeung-Shim)|[@kocoveen](https://github.com/kocoveen)|[@minizzung](https://github.com/minizzung)|[@SACANDO](https://github.com/SACANDO)|
