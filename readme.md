@@ -1,5 +1,5 @@
 # 👨‍👦‍👦Team
-|![](https://avatars.githubusercontent.com/u/90131657?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163400?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163428?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/79296295?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/152831880?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/119462333?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/133585698?v=4?width-150px)|
+|![](https://avatars.githubusercontent.com/u/90131657?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163400?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/156163428?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/79296295?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/152831880?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/119462333?v=4?width=150px)|![](https://avatars.githubusercontent.com/u/133585698?v=4?width=150px)|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[@hyewon-p](https://github.com/hyewon-p)|[@InhyukTak](https://github.com/InhyukTak)|[@JaeSeung-Shim](https://github.com/JaeSeung-Shim)|[@kocoveen](https://github.com/kocoveen)|[@minizzung](https://github.com/minizzung)|[@SACANDO](https://github.com/SACANDO)|[@JJOK97](https://github.com/JJOK97)|
 
@@ -172,6 +172,8 @@ ex)<br>
 대제목 : Week + 주차"
 
 중제목 : 사이트이름 + 문제 번호 + 문제명
+
+커밋 시에 메시지는 `[docs] week + 주차`로
 
 자세한 것은 **[문제 README.md 템플릿](docs/README_example.md)** 참조
 
