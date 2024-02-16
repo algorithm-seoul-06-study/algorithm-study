@@ -1,109 +1,70 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
-import java.util.List;
 
 public class BOJ9935 {
+	static String bomb;
+
 	public static void main(String[] args) throws IOException {
+		Deque<Character> stack = new ArrayDeque<>();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-		String letters = br.readLine();
-		String bomb = br.readLine();
-		Deque<List<Character>> stack = new ArrayDeque<>();
-
-		boolean printed = false;
-
-		int i = 0;
-		int visited = 0;
-		while (i < letters.length()) {
-			int idx = i;
-			// 폭발 문자열에 해당 인덱스 문자가 존재하는지 검사
-			int letterIdx = bomb.indexOf(letters.charAt(i));
-			if (letterIdx > -1) {
-				// 존재한다면 첫번째 글자로 맞춤
-				idx -= letterIdx;
+		String str = br.readLine();
+		bomb = br.readLine();
+		
+		int targetIdx = 0;
+		for (char letter : str.toCharArray()) {
+			// 만약 목표 문자(폭발 문자열에서 targetIdx에 해당하는 문자)와 검사하는 문자가 같거나
+			// 폭발 문자열의 첫글자인 경우 targetIdx 갱신
+			if (bomb.charAt(targetIdx) == letter || bomb.charAt(0) == letter) {
+				targetIdx = bomb.charAt(targetIdx) == letter ? targetIdx + 1 : 1;
 			}
+			stack.add(letter);
 			
-			// 검사하지 않은 이전의 문자열 중에
-			// 폭발 문자열의 첫글자와 일치하는 가장 앞글자 찾기
-			while (true) {
-				// 만약 검사하려는 시작 인덱스가 0보다 작거나 이미 검사했던 경우
-				if (idx - 1 < 0 || idx - 1 < visited) {
-					break;
-				}
-				// 검사하려는 첫번째 글자보다 전에 폭발 문자열이 있는지 검사
-				letterIdx = bomb.indexOf(letters.charAt(idx - 1));
-				if (letterIdx < 0) {
-					break;
-				}
-				idx -= letterIdx + 1;
-			}
-			
-			// 찾은 글자 인덱스 앞의 폭발하지 않는 문자열들 출력
-			if (visited < idx) {
-				System.out.print(letters.substring(visited, idx));
-				printed = true;
-			}
-			
-			// 폭발 문자열에 해당하는 문자를 저장해둔 스택이 존재하거나
-			// 현재 글자가 폭발 문자열의 첫글자와 일치한다면 검사를 시작
-			while (!stack.isEmpty() || letters.charAt(idx) == bomb.charAt(0)) {
-				// 첫글자라면 스택에 리스트 추가
-				if (letters.charAt(idx) == bomb.charAt(0)) {
-					List<Character> tmp = new ArrayList<>();
-					tmp.add(letters.charAt(idx));
-					stack.add(tmp);
-					idx++;
-				}
-				// 현재 인덱스의 문자가 마지막으로 저장했던 스택의 폭발 문자 다음 문자인 경우 스택에 추가
-				if (letters.charAt(idx) == bomb.charAt(stack.peekLast().size())) {
-					List<Character> tmp = stack.pollLast();
-					tmp.add(letters.charAt(idx));
-					// 폭발 문자열이 완성되면 스택에서 제거
-					if (tmp.size() < bomb.length()) {
-						stack.add(tmp);
-					}
-					idx++;
+			if (targetIdx == bomb.length()) {
+				// 단어가 폭발 문자열과 일치하는지 확인
+				check(stack);
+				// targetIdx 다시 정해주기
+				if (stack.isEmpty()) {
+					targetIdx = 0;
 				} else {
-					// 폭발 문자열이 완성되지 않았으므로 스택 비우기
-					while (!stack.isEmpty()) {
-						for (char s : stack.poll()) {
-							System.out.print(s);
-							printed = true;
-						}
-					}
-					;
-					break;
+					// 이번 폭발 전에 마지막으로 stack에 넣었던 문자 검사
+					int nextIdx = bomb.lastIndexOf(stack.peekLast());
+					targetIdx = nextIdx == -1 ? 0 : (nextIdx + 1) % bomb.length();
 				}
-				i = idx;
-			}
-			// 현재 인덱스까지 검사했음을 기록
-			visited = idx;
-			// 인덱스 점프 
-			i += bomb.length();
-		}
-		
-		// 문자열이 끝났는데도 스택이 남아있으면 출력
-		while (!stack.isEmpty()) {
-			for (char s : stack.poll()) {
-				System.out.print(s);
-				printed = true;
+
 			}
 		}
 		
-		// 검사하려는 인덱스가 문자열을 넘어간 경우의 처리
-		if (visited < letters.length()) {
-			String leftover = letters.substring(visited, letters.length());
-			if (!leftover.equals(bomb)) {
-				System.out.println(leftover);
-				printed = true;
+		// stack 내용 출력
+		StringBuilder sb = new StringBuilder();
+		if (stack.isEmpty()) {
+			sb.append("FRULA");
+		} else {
+			while (!stack.isEmpty()) {
+				sb.append(stack.pollFirst());
 			}
 		}
-		
-		// 출력한 적 없을 때
-		if (!printed)
-			System.out.println("FRULA");
+		System.out.println(sb);
 	}
 
+	// 단어 검사 함수
+	static void check(Deque<Character> stack) {
+		// 임시로 배열을 만들어서 stack에서 빼오는 문자 저장
+		char[] tmp = new char[bomb.length()];
+		for (int i = bomb.length() - 1; i >= 0; i--) {
+			if (stack.peekLast() == bomb.charAt(i)) {
+				tmp[i] = stack.pollLast();
+			} else {
+				// 폭발 문자열과 일치하지 않는 경우라면 tmp 내부 문자 돌려놓고 return
+				for (char t: tmp) {
+					if (t>0) {
+						stack.add(t);						
+					}
+				}
+				return;
+			}
+		}
+	}
 }
