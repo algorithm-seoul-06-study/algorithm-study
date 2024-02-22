@@ -21,6 +21,7 @@ public class BOJ11866 {
 		}
 		int j =-1;
 		System.out.print("<");
+		
 		for(int i=0; i<n; i++) {
 			j+=k;
 			if(j>=list.size()) {
