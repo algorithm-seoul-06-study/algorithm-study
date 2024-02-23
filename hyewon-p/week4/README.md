@@ -128,12 +128,16 @@ class Comp implements Comparable<Comp> {
 
 ### 🎈 해결방법 :
 
-트리의 루트를 기준으로 왼쪽, 오른쪽 자식의 인덱스를 구해 재귀로 풀려고 했음
-이런저런 예외 처리를 해주다가 실패
+_트리의 루트를 기준으로 왼쪽, 오른쪽 자식의 인덱스를 구해 재귀로 풀려고 했음_
+_이런저런 예외 처리를 해주다가 실패_
+=> 트리 루트 기준으로 왼쪽 오른쪽 크기를 비교하고,
+루트와 서브트리 인오더 기준의 시작, 끝 인덱스를 넘겨줘서 다시 비교
 
 ### 💬 코멘트 :
 
-너무 어려워요
+_너무 어려워요_
+사이즈 비교로 바꿨더니 금방 풀려서 조금 슬퍼졌음
+뭔가 이진탐색 느낌이 나서 신기했습니다
 
 ### 📄 코드
 
@@ -161,47 +165,31 @@ public class BOJ2263 {
 			postorder[i] = readInt();
 		}
 
-		int root = postorder[n - 1];
-		int inIdx = getIdxFromInorder(root);
-		find(n - 1, inIdx);
+		find(postorder[n - 1], 0, n - 1);
 		System.out.println(sb);
 
 	}
 
-	// 루트값의 postorder에서의 index, inorder에서의 index 전달
-	static void find(int postIdx, int inIdx) {
-		int rootValue = postorder[postIdx];
-		// 루트값 저장
-		if (visited.contains(rootValue)) {
-			System.out.println("nope1");
-			return;
-		}
-		visited.add(rootValue);
-		sb.append(rootValue + " ");
-		if (inIdx < 1 || inIdx >= n-1) {
-			System.out.println("nope2");
-			return;
+	static void find(int rootValue, int start, int end) {
+		sb.append(rootValue+" ");
+
+		int inPos = getIdxFromInorder(rootValue);
+		int postPos = getIdxFromPostorder(rootValue);
+
+		int lSize = inPos-start;
+		int rSize = end - inPos;
+
+
+		if (lSize>1) {
+			find(postorder[postPos-rSize-1], start, inPos-1);
+		}else if (lSize==1){
+			sb.append(inorder[inPos-1]+" ");
 		}
 
-		// 오른쪽 서브트리의 루트값
-		int rootR = postorder[postIdx - 1];
-		int rootRIdx = getIdxFromInorder(rootR);
-
-		// 왼쪽 서브트리의 루트값
-		int rootLIdxP = getIdxFromPostorder(inorder[inIdx + 1]) - 1;
-		int rootL = postorder[rootLIdxP];
-		int rootLIdx = getIdxFromInorder(rootL);
-
-		// 자식이 왼쪽에만 있는 경우
-		if (rootR == rootL) {
-			find(rootLIdxP, rootLIdx);
-		}
-		// 자식이 오른쪽에만 있는 경우
-		else if (rootLIdxP>postIdx) {
-			find(postIdx - 1, rootRIdx);
-		} else {
-			find(rootLIdxP, rootLIdx);
-			find(postIdx - 1, rootRIdx);
+		if (rSize>1) {
+			find(postorder[postPos-1], inPos+1, end);
+		}else if (rSize == 1) {
+			sb.append(inorder[inPos+1]+" ");
 		}
 
 	}
