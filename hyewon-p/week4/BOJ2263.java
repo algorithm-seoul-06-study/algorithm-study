@@ -21,50 +21,31 @@ public class BOJ2263 {
 			postorder[i] = readInt();
 		}
 
-		int root = postorder[n - 1];
-		int inIdx = getIdxFromInorder(root);
-		find(n - 1, inIdx);
+		find(postorder[n - 1], 0, n - 1);
 		System.out.println(sb);
 
 	}
 
-	// 루트값의 postorder에서의 index, inorder에서의 index 전달
-	static void find(int postIdx, int inIdx) {
-		int rootValue = postorder[postIdx];
-		// 루트값 저장
-		System.out.print("root: " + rootValue);
-//		System.out.print(visited);
-		if (visited.contains(rootValue)) {
-			System.out.println("nope1");
-			return;
-		}
-		visited.add(rootValue);
-		sb.append(rootValue + " ");
-		if (inIdx < 1 || inIdx >= n-1) {
-			System.out.println("nope2");
-			return;
-		}
+	static void find(int rootValue, int start, int end) {
+		sb.append(rootValue+" ");
+		
+		int inPos = getIdxFromInorder(rootValue);
+		int postPos = getIdxFromPostorder(rootValue);
+		
+		int lSize = inPos-start;
+		int rSize = end - inPos;
 
-		// 오른쪽 서브트리의 루트값
-		int rootR = postorder[postIdx - 1];
-		int rootRIdx = getIdxFromInorder(rootR);
 
-		// 왼쪽 서브트리의 루트값
-		int rootLIdxP = getIdxFromPostorder(inorder[inIdx + 1]) - 1;
-		int rootL = postorder[rootLIdxP];
-		int rootLIdx = getIdxFromInorder(rootL);
-
-		System.out.println(" L: " + rootL + " R: " + rootR);
-		// 자식이 왼쪽에만 있는 경우
-		if (rootR == rootL) {
-			find(rootLIdxP, rootLIdx);
+		if (lSize>1) {
+			find(postorder[postPos-rSize-1], start, inPos-1);
+		}else if (lSize==1){
+			sb.append(inorder[inPos-1]+" ");
 		}
-		// 자식이 오른쪽에만 있는 경우
-		else if (rootLIdxP>postIdx) {
-			find(postIdx - 1, rootRIdx);
-		} else {
-			find(rootLIdxP, rootLIdx);
-			find(postIdx - 1, rootRIdx);
+		
+		if (rSize>1) {
+			find(postorder[postPos-1], inPos+1, end);
+		}else if (rSize == 1) {
+			sb.append(inorder[inPos+1]+" ");
 		}
 
 	}
