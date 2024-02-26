@@ -1,5 +1,69 @@
 # Week 5
 
+## BOJ1932 정수삼각형
+
+### 🎈 해결방법 :
+다익스트라?인가? 부모 노드 중 큰 값을 저장하고 더해가는 방식
+1. 부모 노드 중 큰 값(next 리스트에 저장된)에 실제 노드값을 더해서 rec 배열에 저장
+2. next 리스트를 비우고 새로 저장
+    1. 다음 줄의 n, n+1번째 인덱스 값이 자식이므로 next 리스트의 해당 인덱스에 현재 값(부모노드) 저장
+    2. 이미 저장된 값이 있으면 비교해서 큰 값으로 갱신
+3. 리프 노드에 대해 최대값 출력
+
+### 💬 코멘트 :
+
+
+### 📄 코드
+```java
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class BOJ1932 {
+	public static void main(String[] args) throws IOException {
+		int n = readInt();
+        // 다음 레벨을 위한 부모 노드 중 최댓값 저장 리스트
+		List<Integer> next = new ArrayList<>();
+		int max = 0;
+
+		for (int i = 0; i < n; i++) {
+            // 부모값에 노드값을 더해서 값을 저장할 배열
+			int[] rec = new int[i+1];
+			for (int j=0; j<i;j++) {		
+				rec[j] = next.get(j) + readInt();
+			}
+			next.clear();
+            // 부모 값 중 최댓값 저장해주기
+			for (int j = 0; j < i+1; j++) {
+				if (j > 0) {
+					next.set(j, Math.max(next.get(j), rec[j]));
+				}else {
+					next.add(rec[j]);
+				}
+				next.add(rec[j]);
+			}
+		}
+        // 리프 노드 중 최댓값
+		for (int j=0; j<n;j++) {		
+			max= Math.max(max, next.get(j) + readInt());
+		}
+		System.out.println(max);
+		
+
+	}
+
+	public static int readInt() throws IOException {
+		int c, n = System.in.read() & 15;
+		while ((c = System.in.read()) > 32) {
+			n = (n << 3) + (n << 1) + (c & 15);
+		}
+		if(c==13) c= System.in.read();
+		return n;
+	}
+}
+
+```
+
 ## BOJ1987 알파벳
 
 ### 🎈 해결방법 :
@@ -9,7 +73,6 @@
 카운트 배열 + 아스키 코드를 사용해서 알파벳의 개수를 기록했는데 생각보다 쉽게 풀려서 놀랐고 배운 거 잘 써먹어서 뿌듯했음
 
 ### 📄 코드
-
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
