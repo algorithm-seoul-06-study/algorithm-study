@@ -231,7 +231,7 @@ public class BOJ1987 {
 ```math
    f(i, j) = \left\{
    \begin{matrix}
-   max(f(i - 1, j), findMax(i, j - 1)) & \text{if $A_{i} != B_{j}$} \\
+   max(f(i - 1, j), f(i, j - 1)) & \text{if $A_{i} != B_{j}$} \\
    f(i - 1, j - 1) + 1 & \text{if $A_{i} = B_{j}$} \\
    \end{matrix}
    \right.$$
