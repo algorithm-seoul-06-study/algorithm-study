@@ -1,5 +1,76 @@
 # Week 5
 
+## BOJ1182 부분수열의 합
+
+### 🎈 해결방법 :
+재귀로 조합 구해서 합을 계산하고 비교
+*조합을 저장하지 않고 중복을 검사하기 위해서 이전 조합과 비교할 필요가 있음* => 이전 배열의 크기를 함께 넘겨줌
+
+### 💬 코멘트 :
+수업에서 재귀로 조합 뽑는 알고리즘을 배운 게 도움이 되었습니다. 좀 헷갈리고 있었는데 덕분에 금방 풀었음
+
+### 📄 코드
+```java
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	static int N, S;
+	static List<Integer> nums;
+	static int answer = 0;
+
+	public static void main(String[] args) throws IOException {
+		FastReader fr = new FastReader();
+		N = fr.nextInt();
+		S = fr.nextInt();
+		nums = new ArrayList<>();
+		for (int n = 0; n < N; n++) {
+			nums.add(fr.nextInt());
+		}
+		getSum(0, 0, 0, 0);
+		System.out.println(answer);
+	}
+
+	// param: 현재 검사할 인덱스, 이전 반복까지의 합,
+	// 이전 반복에서의 조합 크기, 현재 조합의 크기
+	static void getSum(int idx, int sum, int prev, int count) {
+		// 만약 합이 목표와 같고, 이전 조합과 크기가 다를 때
+		if (sum == S && prev != count && count > 0) {
+			answer++;
+		}
+		if (idx == N) {
+			return;
+		}
+		// 현재 인덱스의 값 미포함
+		getSum(idx + 1, sum, count, count);
+		// 현재 인덱스의 값 포함
+		getSum(idx + 1, sum + nums.get(idx), count, count + 1);
+	}
+
+}
+
+class FastReader {
+	BufferedReader br;
+	StringTokenizer st;
+
+	public FastReader() {
+		br = new BufferedReader(new InputStreamReader(System.in));
+	}
+    
+	int nextInt() {
+		while (st == null || !st.hasMoreElements()) {
+			try {
+				st = new StringTokenizer(br.readLine());
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+		}
+		return Integer.parseInt(st.nextToken());
+	}
+
+}
+```
+
 ## BOJ1932 정수삼각형
 
 ### 🎈 해결방법 :
@@ -11,7 +82,7 @@
 3. 리프 노드에 대해 최대값 출력
 
 ### 💬 코멘트 :
-
+입력받는 형식 보자마자 삼각형이군=>다익스트라? 해서 풀었는데 리프부터 위로 올라가면 오히려 단순하다고 해서 충격먹음
 
 ### 📄 코드
 ```java
