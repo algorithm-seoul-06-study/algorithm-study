@@ -143,18 +143,24 @@ public class BOJ2011 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		char[] letters = br.readLine().toCharArray();
 
+		// 만약 첫번째 숫자가 0이라면 성립하지 않으므로 리턴
 		if (letters[0] == '0') {
 			System.out.println(0);
 			return;
 		}
 		
+		// 저장할 배열
 		long[] dp = new long[letters.length];
 		for (int i = 0; i < dp.length; i++) {
+			// 1개라면 경우의 수가 1
 			if (i == 0) {
 				dp[i] = 1;
+			// 2개일 때 오류 나지 않도록 따로 계산
 			}else if(i==1) {
 				if(Integer.parseInt(letters[i - 1] + "" + letters[i]) <= 26) dp[i]++;
 				if(letters[i]!='0') dp[i]++;
+			// 만약 0이 연속으로 나오거나,
+			// 0 다음 수를 띄어서 쓸 수 없는 경우 리턴
 			}else {
 				if (letters[i] == '0'
 						&& (letters[i - 1] == '0' || Integer.parseInt(letters[i - 1] + "" + letters[i]) > 26)) {
@@ -162,9 +168,12 @@ public class BOJ2011 {
 					return;
 				}
 
+				// 앞 글자에 띄어서 붙일 수 있는지
 				if (letters[i] != '0') {
 					dp[i] += dp[i - 1];
 				}
+
+				// 앞 글자에 바로 붙일 수 있는지
 				if (Integer.parseInt(letters[i - 1] + "" + letters[i]) <= 26 && letters[i - 1] != '0') {
 					dp[i] += dp[i - 2];
 				}
@@ -176,4 +185,60 @@ public class BOJ2011 {
 		System.out.println(dp[dp.length - 1] % 1000000);
 	}
 }
+```
+
+## BOJ1790 수 이어 쓰기 2
+
+### 🎈 해결방법 :
+앞에서부터 한번에 더해나가는 느낌으로... 나머지로 인덱스를 잡아서 확인
+
+### 💬 코멘트 :
+패턴을 알아내는 게 전부였던 수학 문제
+
+### 📄 코드
+```java
+import java.io.IOException;
+
+public class BOJ1790 {
+	public static void main(String[] args) throws IOException {
+		int N = readInt();
+		long k = readInt();
+
+		// 완전히 채워지는 자릿수만큼의 새로운 수 길이 확인
+		long limit = 1;
+		// 자릿수
+		int i = 0;
+
+		while (true) {
+			// 새로운 수의 길이 더해나감
+			long tmp = i * (long) Math.pow(10, i - 1) * 9;
+			// 목표 인덱스를 넘어가면 탈출
+			if (limit + tmp > k) {
+				break;
+			}
+			limit += tmp;
+			i++;
+		}
+
+		// 앞 자릿수까지의 길이 + 남는 만큼을 더하면 어떤 숫자의 일부인지 알 수 있음
+		long num = (long) (Math.pow(10, i-1) + (k - limit) / i);
+		if (num > N) {
+			System.out.println(-1);
+		} else {
+			// 숫자에서 원하는 인덱스의 수 출력
+			System.out.println((num + "").charAt((int) (k - limit) % i));
+		}
+	}
+
+	static int readInt() throws IOException {
+		int c, n = System.in.read() & 15;
+		while ((c = System.in.read()) > 32) {
+			n = (n << 3) + (n << 1) + (c & 15);
+		}
+		if (c == 13)
+			System.in.read();
+		return n;
+	}
+}
+
 ```
