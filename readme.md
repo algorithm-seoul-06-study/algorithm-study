@@ -22,22 +22,40 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 <br>
 
 ## 문제 README 링크
+### 2주차
+:dart: [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)  |  [포도주 시식](https://www.acmicpc.net/problem/2156)  |  [미세먼지 안녕!](https://www.acmicpc.net/problem/17144)  |  [리모컨](https://www.acmicpc.net/problem/1107)
+|  [박혜원](hyewon-p/week2/README.md) | [배수아](sooa971/week2/README.md) | [심재승](jsshim2001/week2/README.md) | [장웅기](kocoveen/week2/README.md) | [탁인혁](InhyukTak/week2/README.md) | [정민](minizzung/week2/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 
-| 날짜 | 박혜원 | 배수아 | 심재승 | 정민 | 장웅기 | 탁인혁 | 옥진석 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 2주차 | [링크](hyewon-p/week2/README.md) | [링크](sooa971/week2/README.md) | [링크](jsshim2001/week2/README.md) | [링크](minizzung/week2/README.md) | [링크](kocoveen/week2/README.md) | [링크](InhyukTak/week2/README.md) | 없음 |
-| 3주차 | [링크](hyewon-p/week3/README.md) | [링크](sooa971/week3/README.md) | [링크](jsshim2001/week3/README.md) | [링크](minizzung/week3/README.md) | [링크](kocoveen/week3/README.md) | [링크](InhyukTak/week3/README.md) | [링크](jins/week3/README.md) |
-| 4주차 | [링크](hyewon-p/week4/README.md) | [링크](sooa971/week4/README.md) | [링크](jsshim2001/week4/README.md) | [링크](minizzung/week4/README.md) | [링크](kocoveen/week4/README.md) | [링크](InhyukTak/week4/README.md) | [링크](jins/week4/README.md) |
-| 5주차 | [링크](hyewon-p/week5/README.md) | [링크](sooa971/week5/README.md) | [링크](jsshim2001/week5/README.md) | [링크](minizzung/week5/README.md) | [링크](kocoveen/week5/README.md) | [링크](InhyukTak/week5/README.md) | [링크](jins/week5/README.md) |
-| 6주차 | [링크](hyewon-p/week6/README.md) | [링크](sooa971/week6/README.md) | [링크](jsshim2001/week6/README.md) | [링크](minizzung/week6/README.md) | [링크](kocoveen/week6/README.md) | [링크](InhyukTak/week6/README.md) | [링크](jins/week6/README.md) |
-| 7주차 | [링크](hyewon-p/week7/README.md) | [링크](sooa971/week7/README.md) | [링크](jsshim2001/week7/README.md) | [링크](minizzung/week7/README.md) | [링크](kocoveen/week7/README.md) | [링크](InhyukTak/week7/README.md) | [링크](jins/week7/README.md) |
-| 8주차 | [링크](hyewon-p/week8/README.md) | [링크](sooa971/week8/README.md) | [링크](jsshim2001/week8/README.md) | [링크](minizzung/week8/README.md) | [링크](kocoveen/week8/README.md) | [링크](InhyukTak/week8/README.md) | [링크](jins/week8/README.md) |
-| 9주차 | [링크](hyewon-p/week9/README.md) | [링크](sooa971/week9/README.md) | [링크](jsshim2001/week9/README.md) | [링크](minizzung/week9/README.md) | [링크](kocoveen/week9/README.md) | [링크](InhyukTak/week9/README.md) | [링크](jins/week9/README.md) |
-| 10주차 | [링크](hyewon-p/week10/README.md) | [링크](sooa971/week10/README.md) | [링크](jsshim2001/week10/README.md) | [링크](minizzung/week10/README.md) | [링크](kocoveen/week10/README.md) | [링크](InhyukTak/week10/README.md) | [링크](jins/week10/README.md) |
-| 11주차 | [링크](hyewon-p/week11/README.md) | [링크](sooa971/week11/README.md) | [링크](jsshim2001/week11/README.md) | [링크](minizzung/week11/README.md) | [링크](kocoveen/week11/README.md) | [링크](InhyukTak/week11/README.md) | [링크](jins/week11/README.md) |
-| 12주차 | [링크](hyewon-p/week12/README.md) | [링크](sooa971/week12/README.md) | [링크](jsshim2001/week12/README.md) | [링크](minizzung/week12/README.md) | [링크](kocoveen/week12/README.md) | [링크](InhyukTak/week12/README.md) | [링크](jins/week12/README.md) |
-| 13주차 | [링크](hyewon-p/week13/README.md) | [링크](sooa971/week13/README.md) | [링크](jsshim2001/week13/README.md) | [링크](minizzung/week13/README.md) | [링크](kocoveen/week13/README.md) | [링크](InhyukTak/week13/README.md) | [링크](jins/week13/README.md) |
+### 3주차
+:dart: [문자열 폭발](https://www.acmicpc.net/problem/9935) | [1,2,3더하기](https://www.acmicpc.net/problem/9095)
+|  [박혜원](hyewon-p/week3/README.md) | [배수아](sooa971/week3/README.md) | [심재승](jsshim2001/week3/README.md) | [장웅기](kocoveen/week3/README.md) | [탁인혁](InhyukTak/week3/README.md) | [옥진석](jins/week3/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 
+### 4주차
+:dart: [트리의 순회](https://www.acmicpc.net/problem/2263) | [오큰수](https://www.acmicpc.net/problem/17298) | [요세푸스 문제0](https://www.acmicpc.net/problem/11866)
+|  [박혜원](hyewon-p/week4/README.md) | [배수아](sooa971/week4/README.md) | [심재승](jsshim2001/week4/README.md) | [장웅기](kocoveen/week4/README.md) | [탁인혁](InhyukTak/week4/README.md) | [옥진석](jins/week4/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+
+### 5주차
+:dart: [정수 삼각형](https://www.acmicpc.net/problem/1932) | [LCS](https://www.acmicpc.net/problem/9251) | [부분수열의 합](https://www.acmicpc.net/problem/1182) | [알파벳](https://www.acmicpc.net/problem/1987)
+|  [박혜원](hyewon-p/week5/README.md) | [배수아](sooa971/week5/README.md) | [심재승](jsshim2001/week5/README.md) | [장웅기](kocoveen/week5/README.md) | [탁인혁](InhyukTak/week5/README.md) | [옥진석](jins/week5/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+
+### 6주차
+:dart: [수 이어 쓰기2](https://www.acmicpc.net/problem/1790) | [쿼드트리](https://www.acmicpc.net/problem/1992) | [암호코드](https://www.acmicpc.net/problem/2011) 
+|  [박혜원](hyewon-p/week6/README.md) | [배수아](sooa971/week6/README.md) | [심재승](jsshim2001/week6/README.md) | [장웅기](kocoveen/week6/README.md) | [탁인혁](InhyukTak/week6/README.md) | [옥진석](jins/week6/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+
+### 7주차
+:dart: [열쇠](https://www.acmicpc.net/problem/9328) | [케빈 베이컨의 6단계 법칙](https://www.acmicpc.net/problem/1389) | [레이저 통신](https://www.acmicpc.net/problem/6087) 
+|  [박혜원](hyewon-p/week7/README.md) | [배수아](sooa971/week7/README.md) | [심재승](jsshim2001/week7/README.md) | [장웅기](kocoveen/week7/README.md) | [탁인혁](InhyukTak/week7/README.md) | [옥진석](jins/week7/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+
+### 8주차
+:dart: [치즈](https://www.acmicpc.net/problem/2636) | [Moo 게임](https://www.acmicpc.net/problem/5904) | [의약품 수송](https://www.acmicpc.net/problem/16227) 
+|  [박혜원](hyewon-p/week8/README.md) | [배수아](sooa971/week8/README.md) | [심재승](jsshim2001/week8/README.md) | [장웅기](kocoveen/week8/README.md) | [탁인혁](InhyukTak/week8/README.md) | [옥진석](jins/week8/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 <br>
 
 
