@@ -51,7 +51,51 @@ def sol():
 sol()
 ```
 
+## BOJ5904 Moo 게임
 
+### 🎈 해결방법 :
+
+### 💬 코멘트 :
+
+### 📄 코드
+```python
+k = 3
+n = 0
+def sol():
+    global k, n
+    n = int(input())
+    i = 4
+    while True:
+        if checkLetter(): return
+        k+=i
+        calChild(i-1)
+        i += 1
+
+def calChild(i):
+    global k
+    if i==3:
+        k+=i
+        return
+    if k < n - 1:
+        calChild(i-1)
+    if k < n-1:
+        k+=i
+    if k < n-1:
+        calChild(i-1)
+
+
+def checkLetter():
+    if k == n - 1:
+        print("m")
+        return True
+    if k >= n:
+        print("o")
+        return True
+    return False
+
+sol()
+
+```
 
 ## BOJ16227 의약품 수송
 
