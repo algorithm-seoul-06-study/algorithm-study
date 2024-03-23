@@ -157,7 +157,7 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 {Github ID}/{주차}/{"사이트약어 + 문제번호".java}
 ```
 
-[사이트 약어 정보](https://github.com/algorithm-seoul-06-study/algorithm-study?tab=readme-ov-file#%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%95%BD%EC%96%B4-%EA%B4%80%EB%A0%A8-%EC%A0%95%EB%B3%B4)
+[사이트 약어 정보](#sitename)
 
 ex) <br>
 `kocoveen/week1/BOJ1004.java` <br>
@@ -197,7 +197,7 @@ ex)<br>
 | --- | --- |
 | 파일명 | README.md |
 | 대제목 | Week + 주차 |
-| 중제목 | [사이트 약어](https://github.com/algorithm-seoul-06-study/algorithm-study?tab=readme-ov-file#%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%95%BD%EC%96%B4-%EA%B4%80%EB%A0%A8-%EC%A0%95%EB%B3%B4) + 문제 번호 + 문제명 |
+| 중제목 | [사이트 약어](#sitename) + 문제 번호 + 문제명 |
 
 ❗커밋 시에 메시지는 `[docs] week + 주차`로❗
 
@@ -205,7 +205,7 @@ ex)<br>
 
 <br>
 
-## 사이트 약어 관련 정보 
+## 사이트 약어 관련 정보 <a id="sitename"></a>
 | 사이트 | 설명 |
 | --- | --- |
 | 백준 | BOJ |
