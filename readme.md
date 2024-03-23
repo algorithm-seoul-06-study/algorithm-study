@@ -204,8 +204,8 @@ ex)<br>
 | --- | --- |
 | 백준 | BOJ |
 | SWEA | SWEA |
-| 프로그래머스 | PRG |
-| Softeer | SFT |
+| 프로그래머스 | PGS |
+| Softeer | SOF |
 
 자세한 문제 템플릿은 **[문제 README.md 템플릿](docs/README_example.md)** 참조
 
