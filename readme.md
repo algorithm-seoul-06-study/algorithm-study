@@ -56,6 +56,11 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 :dart: [치즈](https://www.acmicpc.net/problem/2636) | [Moo 게임](https://www.acmicpc.net/problem/5904) | [의약품 수송](https://www.acmicpc.net/problem/16227) 
 |  [박혜원](hyewon-p/week8/README.md) | [배수아](sooa971/week8/README.md) | [심재승](jsshim2001/week8/README.md) | [장웅기](kocoveen/week8/README.md) | [탁인혁](InhyukTak/week8/README.md) | [옥진석](jins/week8/README.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
+
+### 9주차
+:dart: [최단경로](https://www.acmicpc.net/problem/1753) | [⚾](https://www.acmicpc.net/problem/17281) | [효도 여행](https://softeer.ai/practice/7649) 
+|  [박혜원](hyewon-p/week9/README.md) | [배수아](sooa971/week9/README.md) | [심재승](jsshim2001/week9/README.md) | [장웅기](kocoveen/week9/README.md) | [탁인혁](InhyukTak/week9/README.md) | [옥진석](jins/week9/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 <br>
 
 
@@ -185,15 +190,24 @@ ex)<br>
 
 ## 문제 README 작성 규칙 <a id="problemreadme"></a>
 
-파일명 : README.md
+### 사이트 약어 관련 정보 
+|  |  |
+| --- | --- |
+| 파일명 | README.md |
+| 대제목 | Week + 주차 |
+| 중제목 | 사이트 약어 + 문제 번호 + 문제명 |
 
-대제목 : Week + 주차"
+❗커밋 시에 메시지는 `[docs] week + 주차`로❗
 
-중제목 : 사이트이름 + 문제 번호 + 문제명
+### 사이트 약어 관련 정보 
+| 사이트 | 설명 |
+| --- | --- |
+| 백준 | BOJ |
+| SWEA | SWEA |
+| 프로그래머스 | PRG |
+| Softeer | SFT |
 
-커밋 시에 메시지는 `[docs] week + 주차`로
-
-자세한 것은 **[문제 README.md 템플릿](docs/README_example.md)** 참조
+자세한 문제 템플릿은 **[문제 README.md 템플릿](docs/README_example.md)** 참조
 
 <br>
 
