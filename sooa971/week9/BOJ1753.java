@@ -7,7 +7,7 @@ public class BOJ1753 {
 	static class Edge implements Comparable<Edge>	{
 		int v,w;
 
-		public Edge(int v, int w) {
+		public Edge(int v, int w) { 
 			this.v = v;
 			this.w = w;
 		}
