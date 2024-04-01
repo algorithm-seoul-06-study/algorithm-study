@@ -32,7 +32,7 @@ public class BOJ17281 {
 
         // 4번 타자일 때는 넘어감
         if (depth == 3) {
-            dfs(depth + 1);
+            backtracking(depth + 1);
             return;
         }
 
@@ -40,7 +40,7 @@ public class BOJ17281 {
             if (visited[i]) continue;
             visited[i] = true;
             battingOrder[depth] = i;
-            dfs(depth + 1);
+            backtracking(depth + 1);
             visited[i] = false;
         }
 
