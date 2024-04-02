@@ -61,6 +61,11 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 :dart: [최단경로](https://www.acmicpc.net/problem/1753) | [⚾](https://www.acmicpc.net/problem/17281) | [효도 여행](https://softeer.ai/practice/7649) 
 |  [박혜원](hyewon-p/week9/README.md) | [배수아](sooa971/week9/README.md) | [심재승](jsshim2001/week9/README.md) | [장웅기](kocoveen/week9/README.md) | [탁인혁](InhyukTak/week9/README.md) | [옥진석](jins/week9/README.md) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
+
+### 10주차
+:dart: [평범한 배낭](https://www.acmicpc.net/problem/12865) | [헨리](https://www.acmicpc.net/problem/10253)
+|  [박혜원](hyewon-p/week10/README.md) | [배수아](sooa971/week10/README.md) | [심재승](jsshim2001/week10/README.md) | [장웅기](kocoveen/week10/README.md) | [탁인혁](InhyukTak/week10/README.md) | [옥진석](jins/week10/README.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 <br>
 
 
