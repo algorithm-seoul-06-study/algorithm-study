@@ -70,12 +70,12 @@ BOJ 그룹 (https://www.acmicpc.net/group/19832)
 ### 11주차
 :dart: [부분수열의 합 2](https://www.acmicpc.net/problem/1208) | [온풍기 안녕!](https://www.acmicpc.net/problem/23289)
 |  [박혜원](hyewon-p/week11/README.md) | [배수아](sooa971/week11/README.md) | [심재승](jsshim2001/week11/README.md) | [장웅기](kocoveen/week11/README.md) | [탁인혁](InhyukTak/week11/README.md) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|
 
 ### 12주차
 :dart: [도시 분할 계획](https://www.acmicpc.net/problem/1647) | [나무 재테크](https://www.acmicpc.net/problem/16235)
 |  [박혜원](hyewon-p/week12/README.md) | [배수아](sooa971/week12/README.md) | [심재승](jsshim2001/week12/README.md) | [장웅기](kocoveen/week12/README.md) | [탁인혁](InhyukTak/week12/README.md) |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|
 <br>
 
 
